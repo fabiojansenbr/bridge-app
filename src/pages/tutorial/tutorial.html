@@ -1,0 +1,44 @@
+<ion-header no-border>
+  <ion-navbar>
+    <ion-buttons end *ngIf="showSkip">
+      <button ion-button (click)="startApp()" color="primary">Skip</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-bounce>
+  <ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" pager>
+
+    <ion-slide>
+      <img src="assets/img/ica-slidebox-img-1.png" class="slide-image"/>
+      <h2 class="slide-title">
+        Welcome to <b>Bridge</b>
+      </h2>
+      <p>
+        The <b>Bridge Community</b> Lorem ipsum dolor sit amet, ius ad tantas euripidis dissentias. Ex liber petentium dignissim sed, pri solum semper mentitum at, in volumus omnesque sed. Vim inani delicata reprimique ex. Vel ea admodum insolens.
+      </p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/img/ica-slidebox-img-2.png" class="slide-image"/>
+      <h2 class="slide-title" >What is Bridge?</h2>
+      <p><b>Bridge focuses</b> Lorem ipsum dolor sit amet, ius ad tantas euripidis dissentias. Ex liber petentium dignissim sed, pri solum semper mentitum at, in volumus omnesque sed. Vim inani delicata reprimique ex. Vel ea admodum insolens.</p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/img/ica-slidebox-img-3.png" class="slide-image"/>
+      <h2 class="slide-title">Who can use Bridge?</h2>
+      <p><b>An ideal Bridge user</b> Lorem ipsum dolor sit amet, ius ad tantas euripidis dissentias. Ex liber petentium dignissim sed, pri solum semper mentitum at, in volumus omnesque sed. Vim inani delicata reprimique ex. Vel ea admodum insolens.</p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/img/ica-slidebox-img-4.png" class="slide-image"/>
+      <h2 class="slide-title">Ready to Explore?</h2>
+      <button ion-button icon-end large clear (click)="startApp()">
+        Continue
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-slide>
+
+  </ion-slides>
+</ion-content>

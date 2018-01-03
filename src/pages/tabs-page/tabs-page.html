@@ -1,0 +1,6 @@
+<ion-tabs *ngIf="isLoggedIn" [selectedIndex]="mySelectedIndex" name="conference">
+  <ion-tab [root]="tab1Root" tabTitle="Schedule" tabIcon="calendar" tabUrlPath="conference-schedule"></ion-tab>
+  <ion-tab [root]="tab2Root" tabTitle="Users" tabIcon="contacts"></ion-tab>
+  <ion-tab [root]="tab3Root" tabTitle="Events" tabIcon="map"></ion-tab>
+  <ion-tab [root]="tab4Root" tabTitle="My Events" tabIcon="information-circle"></ion-tab>
+</ion-tabs>
