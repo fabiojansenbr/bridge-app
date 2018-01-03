@@ -13,7 +13,8 @@
     "lint": "ionic-app-scripts lint",
     "ionic:build": "npm run build",
     "ionic:serve": "npm run serve",
-    "ionic:lint": "npm run lint"
+    "ionic:lint": "npm run lint",
+    "ionic:start:" "npm run serve"
   },
   "dependencies": {
     "@angular/common": "5.0.0",
